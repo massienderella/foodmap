@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+	<link rel="stylesheet" href="assets/css/foodmap.css">
+	<link href="https://fonts.googleapis.com/css?family=Cedarville+Cursive" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<script src="https://use.fontawesome.com/a44af8af48.js"></script>
+	<title>FoodMap</title>
+</head>
+<body>
+	<!-- Vista splash -->
+	<div class="row">
+		<div class="col s12 m12 center-align">
+			<div id="splash" class="valign-wrapper">
+				<h1 class="center-align">foodmap</h1>
+			</div>
+		</div>
+	</div>
+
+	<!-- Título -->
+	<header>
+		<div class="row">
+			<div class="col s12 container">
+				<h1 class="center-align">foodmap</h1>
+			</div>
+		</div>
+	</header>
+
+	<!-- Divisor -->
+	<div class="divider"></div>
+	
+	<!-- Mapa -->
+	<section>
+		<div class="row">
+			<div class="col s12">
+				<iframe class="map" src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d6658.8518365788705!2d-70.64650017807116!3d-33.43820836837759!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1srestaurants!5e0!3m2!1ses-419!2scl!4v1513188978332" width="100%" height="300vh" frameborder="0" style="border:1" allowfullscreen></iframe>
+			</div>
+		</div>
+	</section>
+
+	<!-- Divisor -->
+	<div class="divider"></div>
+
+	<!-- Input -->
+	<section>
+		<div class="row">
+			<div class="col s12">
+				<h3 class="center-align">comida cerca de ti</h3>
+			</div>
+			<div class="container">
+				<div class="row">
+					<div class="col s12">
+						<select id="categorias">
+							<option value="0">¿Qué quieres comer hoy?</option>
+							<option value="china">Comida china</option>
+							<option value="coreana">Comida coreana</option>
+							<option value="arabe">Comida árabe</option>
+  							<option value="peruana">Comida peruana</option>
+  							<option value="chilena">Comida chilena</option>
+  							<option value="japonesa">Comida japonesa</option>
+						</select>
+					<div id="container"></div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Modales comida china-->
+	<div id="modal1" class="modal">
+    	<div class="modal-content">
+      		<h4>Los chinos ricos</h4>
+      		<p>Exquisita comida china</p>
+      		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3329.3481937687725!2d-70.66705188518347!3d-33.44023388077685!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662c5ac4a891f57%3A0x692db065cac5c6b!2sLos+Chinos+Ricos!5e0!3m2!1ses-419!2scl!4v1513271470815" width="90%" height="200vh" frameborder="0" style="border:0" allowfullscreen></iframe>
+   		 </div>
+    	<div class="modal-footer">
+      		<a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Home restaurant</a>
+    	</div>
+  </div>
+
+  <div id="modal2" class="modal">
+    	<div class="modal-content">
+      		<h4>La casa china</h4>
+      		<p>Exquisita comida china</p>
+      		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d53205.4345600852!2d-70.65853479287934!3d-33.54455032108026!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662d0eeabb1b03d%3A0xf79ad77c05611340!2sRestaurant+Casa+China!5e0!3m2!1ses-419!2scl!4v1513271609816" width="90%" height="200vh" frameborder="0" style="border:0" allowfullscreen></iframe>
+   		 </div>
+    	<div class="modal-footer">
+      		<a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Home restaurant</a>
+    	</div>
+  </div>
+
+  <div id="modal3" class="modal">
+    	<div class="modal-content">
+      		<h4>Flor oriental</h4>
+      		<p>Exquisita comida china</p>
+      		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26627.9972575835!2d-70.61578052857904!3d-33.46233981929334!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662cfa27924a411%3A0xaeaa9c3066a22dad!2sFlor+Oriental!5e0!3m2!1ses-419!2scl!4v1513271702186" width="90%" height="200vh" frameborder="0" style="border:0" allowfullscreen></iframe>
+   		 </div>
+    	<div class="modal-footer">
+      		<a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Home restaurant</a>
+    	</div>
+  </div>
+
+  <!-- Modales comida coreana-->
+	<div id="modal4" class="modal">
+    	<div class="modal-content">
+      		<h4>Modal Header</h4>
+      		<p>modal 4</p>
+   		 </div>
+    	<div class="modal-footer">
+      		<a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Home restaurant</a>
+    	</div>
+  </div>
+
+  <div id="modal5" class="modal">
+    	<div class="modal-content">
+      		<h4>Modal Header</h4>
+      		<p>modal 5</p>
+   		 </div>
+    	<div class="modal-footer">
+      		<a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Home restaurant</a>
+    	</div>
+  </div>
+
+  <div id="modal6" class="modal">
+    	<div class="modal-content">
+      		<h4>Modal Header</h4>
+      		<p>modal 6</p>
+   		 </div>
+    	<div class="modal-footer">
+      		<a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Home restaurant</a>
+    	</div>
+  </div>
+
+  <!-- Modales comida árabe-->
+	<div id="modal7" class="modal">
+    	<div class="modal-content">
+      		<h4>Modal Header</h4>
+      		<p>modal 7</p>
+   		 </div>
+    	<div class="modal-footer">
+      		<a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Home restaurant</a>
+    	</div>
+  </div>
+
+  <div id="modal8" class="modal">
+    	<div class="modal-content">
+      		<h4>Modal Header</h4>
+      		<p>modal 8</p>
+   		 </div>
+    	<div class="modal-footer">
+      		<a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Home restaurant</a>
+    	</div>
+  </div>
+
+  <div id="modal9" class="modal">
+    	<div class="modal-content">
+      		<h4>Modal Header</h4>
+      		<p>modal 9</p>
+   		 </div>
+    	<div class="modal-footer">
+      		<a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Home restaurant</a>
+    	</div>
+  </div>
+
+  <!-- Modales comida peruana-->
+	<div id="modal10" class="modal">
+    	<div class="modal-content">
+      		<h4>Modal Header</h4>
+      		<p>modal 10</p>
+   		 </div>
+    	<div class="modal-footer">
+      		<a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Home restaurant</a>
+    	</div>
+  </div>
+
+  <div id="modal11" class="modal">
+    	<div class="modal-content">
+      		<h4>Modal Header</h4>
+      		<p>modal 11</p>
+   		 </div>
+    	<div class="modal-footer">
+      		<a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Home restaurant</a>
+    	</div>
+  </div>
+
+  <div id="modal12" class="modal">
+    	<div class="modal-content">
+      		<h4>Modal Header</h4>
+      		<p>modal 12</p>
+   		 </div>
+    	<div class="modal-footer">
+      		<a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Home restaurant</a>
+    	</div>
+  </div>
+
+  <!-- Modales comida chilena-->
+	<div id="modal13" class="modal">
+    	<div class="modal-content">
+      		<h4>Modal Header</h4>
+      		<p>modal 13</p>
+   		 </div>
+    	<div class="modal-footer">
+      		<a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Home restaurant</a>
+    	</div>
+  </div>
+
+  <div id="modal14" class="modal">
+    	<div class="modal-content">
+      		<h4>Modal Header</h4>
+      		<p>modal 14</p>
+   		 </div>
+    	<div class="modal-footer">
+      		<a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Home restaurant</a>
+    	</div>
+  </div>
+
+  <div id="modal15" class="modal">
+    	<div class="modal-content">
+      		<h4>Modal Header</h4>
+      		<p>modal 15</p>
+   		 </div>
+    	<div class="modal-footer">
+      		<a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Home restaurant</a>
+    	</div>
+  </div>
+
+  <!-- Modales comida japonesa-->
+	<div id="modal16" class="modal">
+    	<div class="modal-content">
+      		<h4>Modal Header</h4>
+      		<p>modal 16</p>
+   		 </div>
+    	<div class="modal-footer">
+      		<a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Home restaurant</a>
+    	</div>
+  </div>
+
+  <div id="modal17" class="modal">
+    	<div class="modal-content">
+      		<h4>Modal Header</h4>
+      		<p>modal 17</p>
+   		 </div>
+    	<div class="modal-footer">
+      		<a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Home restaurant</a>
+    	</div>
+  </div>
+
+  <div id="modal18" class="modal">
+    	<div class="modal-content">
+      		<h4>Modal Header</h4>
+      		<p>modal 18</p>
+   		 </div>
+    	<div class="modal-footer">
+      		<a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Home restaurant</a>
+    	</div>
+  </div>
+
+	
+
+<script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+<script src="assets/js/foodmap.js"></script>
+</body>
+</html>
