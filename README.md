@@ -1,4 +1,4 @@
-# foodmap
+# FoodMap
 ¿Qué antojo tienes hoy? En FoodMap podrás encontrar comida deliciosa y tentarte al instante!
 
 ![Muestra](https://i.imgur.com/s3pFhdy.png)
